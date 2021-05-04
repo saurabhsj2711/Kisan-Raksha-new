@@ -1,0 +1,61 @@
+ {% extends "base.html" %} {% block content %}
+
+    <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
+	
+
+    <div class="all-title-box">
+		<div class="container text-center">
+			<h1>Crops<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
+		</div>
+	</div>
+
+    
+    <section class="section lb page-section">
+		<div class="container">
+			 <div class="section-title row text-center">
+                <div class="col-md-8 offset-md-2">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                            <div class="card">
+                                <img src="{{ url_for('static', filename='images/p1.jpg') }}" class="card-img img fluid"`>
+                                <div class="card-body">
+                                    <h2 class="card-title">Cotton</h2>
+                                    <a href="/upload_image" class="btn btn-primary">Predict</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                            <div class="card">
+                                <img src="{{ url_for('static', filename='images/p2.jpg') }}" class="card-img img fluid"`>
+                                <div class="card-body">
+                                    <h2 class="card-title">Tomato</h2>         
+                                    <a href="/upload_image" class="btn btn-primary">Predict</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+                            <div class="card">
+                                 <img src="{{ url_for('static', filename='images/p3.jpg') }}" class="card-img img fluid"`>
+                                <div class="card-body">
+                                    <h2 class="card-title">Grapes</h2>
+                                    <a href="/upload_image" class="btn btn-primary">Predict</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div><!-- end title -->
+	</section>
+
+ {% endblock %}
+    

@@ -1,0 +1,69 @@
+ {% extends "base.html" %} {% block content %}
+
+<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->
+
+
+    <div id="login-container">
+        <!-- Login Header -->
+        <h1>
+          Welcome to <strong>KISAN RAKSHA</strong>
+        </h1>
+        <!-- END Login Header -->
+
+        <!-- Login Block -->
+        <div class="block animation-fadeInQuickInv">
+            <!-- Login Title -->
+            <div class="block-title">
+
+                <h2>Login</h2>
+            </div>
+            <!-- END Login Title -->
+
+            <!-- Login Form -->
+            <form id="form-login" action="log_in" method="post" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <input type="text" id="username" name="username" class="form-control" placeholder="Your username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Your password">
+                    </div>
+                </div>
+                <div class="form-group form-actions">
+                    <div class="col-xs-8">
+                        <label class="csscheckbox csscheckbox-primary">
+                            <input type="checkbox" id="login-remember-me" name="login-remember-me">
+                            <span></span>
+                        </label>
+                        Remember Me.
+                    </div>
+                    <div class="col-xs-4 text-right">
+                        <input type="submit" class="btn btn-effect-ripple btn-sm btn-primary" value="Let's Go" name="login">
+                    </div>
+                </div>
+            </form>
+            <!-- END Login Form -->
+        </div>
+        <!-- END Login Block -->
+
+        <!-- Footer -->
+        <footer class="text-muted text-center animation-pullUp">
+            <small><span id="year"></span> &copy;KISAN RAKSHA 1.0</small>
+        </footer>
+        <!-- END Footer -->
+    </div>
+    <!-- END Login Container -->
+
+
+
+{% endblock %}
